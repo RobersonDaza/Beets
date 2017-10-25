@@ -3,8 +3,8 @@
 
     Iniciar Sesion (Sign In)
         * El usuario Ingresa con un correo y contraseña
-        * El ususario podra recuperar su contraseña
-        * El ususario podra eliminar su cuenta
+        * El ususario podra recuperar su contraseña ingresando su correo electonico
+        * El ususario podra cancelar su cuenta, en la vista de editar perfil tendra la opción de cancelar, al darle click en cancelar le sale un alert para confirmar eliminar la cancelación, automaticamente se cierra la sesión y no podrá volver a ingresar con esa cuenta sino hasta que la vuelva a registrar
 
     Perfíl
         * El usuario puede ver su perfíl
