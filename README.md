@@ -3,20 +3,23 @@
 
     Iniciar Sesion (Sign In)
         * El usuario Ingresa con un correo y contraseña
-        * El ususario podra recuperar su contraseña ingresando su correo electonico
-        * El ususario podra cancelar su cuenta, en la vista de editar perfil tendra la opción de cancelar, al darle click en cancelar le sale un alert para confirmar eliminar la cancelación, automaticamente se cierra la sesión y no podrá volver a ingresar con esa cuenta sino hasta que la vuelva a registrar
+        * El ususario podra recuperar su contraseña ingresando su correo electrónico y escribir una nueva contraseña
+        * El ususario podra cancelar su cuenta, en la vista de editar perfil tendra la opción de cancelar, al darle click en cancelar le sale un alert para confirmar eliminar la cancelación, automaticamente se cierra la sesión y no podrá volver a ingresar con esa cuenta sino hasta que vuelva hacer un registro nuevo
 
     Perfíl
         * El usuario puede ver su perfíl
-        * El usuario tendra la siguiente información en su perfíl (Imagen, Nombre, Nickname, Biografía, Ciudad, teléfono), podra editar y actualizar esa información.
+        * El usuario tendra la siguiente información en su perfíl (Imagen, Contraportada, Nombre, Biografía, Ciudad, teléfono), podra editar y actualizar esa información.
         * El usuario podra ver todos sus beets desde su perfíl
-        * El usuario puede crear un nuevo beet con un maximo de 200 caracteres y la podran ver todos los usuarios en el inicio de la app
+        * El usuario puede crear un nuevo beet con un maximo de 200 caracteres
+        * Todos los usuarios podran ver todos los beets de un usuario que siga
         * El usuario puede eliminar un beet desde su perfíl
-        * El usuario puede editar un beet y guardar cambios para que lo vea de sde su perfil tambien lo pueden ver todos los usuarios en el inicio de la app
+        * El usuario puede editar un beet y guardar cambios para que lo vea desde su perfil y lo puedan ver sus seguidores
+        * el usuario podra ver usuarios que no siga, y tiene la opción de seguirlos, esto se vera en el inicio de la app
         * El usuario podra ver a todos los usuarios que sigue
-        * El usuario puede editar su perfíl y guardar cambios
+        * El usuario puede editar su perfíl y guardar cambios para que se vean reflejados en su perfíl
         * El usuario puede darle me gusta a un beet, y se vera el numero de me gustas en el beet
         * El usuario puede comentar un beet, se vera en una lista de comentarios y el usuario puede responderla o eliminarla
+        * El usuario puede buscar cualquier usuario que siga o no siga por medio de un buscador.
 
     Editar mi perfíl
      El usuario puede editar desde la vista de su perfíl al:
