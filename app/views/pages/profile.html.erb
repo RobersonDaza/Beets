@@ -16,11 +16,14 @@
         </div>
     </div>
     <div class="col-xs-6">
+        <%= render '/components/beet_form' %>
+        <% for @b in @beets %>
         <div class="panel panel-default">
           <div class="panel-body">
-              <p>Beets</p>
+              <p><%= @b.content %></p>
           </div>
         </div>
+        <% end %>
     </div>
     <div class="col-xs-3">
         <div class="panel panel-default">
@@ -28,11 +31,6 @@
               <p>Follow</p>
           </div>
         </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-3 col-xs-offset-9">
         <div class="panel panel-default">
           <div class="panel-body">
               <p>trends</p>

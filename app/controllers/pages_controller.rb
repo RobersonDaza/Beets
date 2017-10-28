@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def home
+      @beets = Beet.all
   end
 
   def profile
@@ -11,8 +12,12 @@ class PagesController < ApplicationController
       else
           redirect_to root_path, :notice => "User not found"
       end
+
+      @beets = Beet.all.where("user_id = ?", User.find_by_username(params[:id]).id)
+      @newBeet = Beet.new
   end
 
   def explore
+      @beets = Beet.all
   end
 end
