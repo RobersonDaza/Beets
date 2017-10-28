@@ -1,0 +1,11 @@
+class CreateBeets < ActiveRecord::Migration[5.1]
+  def change
+    create_table :beets do |t|
+      t.text :content
+      t.references :user, foreign_key: true
+
+      t.timestamps
+    end
+    add_index :beets, [:user_id, :created_at]
+  end
+end
