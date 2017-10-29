@@ -13,3 +13,77 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body{
+    background-color: #E6ECF0;
+}
+.navbar{
+    background-color: #fff;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 50%;
+    padding: 11px;
+}
+
+.form-control{
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+.btn{
+    background-color: #9331B2;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn:hover{
+    background-color: #B857D0;
+    border: none;
+}
+.navbar-nav > li > a{
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.navbar-form .form-control{
+    padding: 0 40px 0 10px;
+    background-color: #f5f8fa;
+}
+
+.beet-panel{
+    margin-top: -22px;
+}
+.beet-tittle{
+    text-align: left;
+    margin-left: 15px;
+}
+.beet-content{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.beet-links{
+    text-align: left;
+}
+
+.beet-owner{
+    color: #000;
+    font-weight: bold;
+}
+
+.beet-creation{
+    opacity: 0.7;
+}
+
+.g-links{
+    opacity: 0.4;
+    font-size: 120%;
+    margin-right: 75px;
+}
+
+.beet-form-panel{
+    margin-bottom: -22px;
+    background-color: #FDE8FC;
+}

@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def home
       @beets = Beet.all
+      @newBeet = Beet.new
   end
 
   def profile

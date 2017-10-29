@@ -12,18 +12,44 @@
         </div>
     </div>
     <div class="col-xs-6">
+        <%= render '/components/beet_form' %> <br><br>
+
         <% for @b in @beets %>
-        <div class="panel panel-default">
-          <div class="panel-body">
-              <p><%= @b.content %></p>
+        <div class="panel panel-default beet-panel">
+          <div class="panel-body row">
+              <div class="col-sm-1">
+                  <img src="/profile.jpg" class="img-circle" height="50px" width="50px" alt="">
+              </div>
+              <div class="col-sm-11">
+                  <p class="beet-tittle"><span class="beet-owner"><%= User.find(@b.user_id).username %></span> <span class="beet-creation"> <%= @b.created_at.to_formatted_s(:short) %></p>
+                  <p class="beet-content"><%= @b.content %></span></p>
+              </div>
+              <div class="col-sm-12">
+                  <p class="beet-links">
+                      <span class="glyphicon glyphicon-comment g-links" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-retweet g-links" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-heart g-links" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-option-horizontal g-links" aria-hidden="true"></span>
+                      <a href="#">View conversation</a>
+                  </p>
+              </div>
           </div>
         </div>
         <% end %>
+
+        <div class="panel panel-default beet-panel">
+            <div class="panel-body row">
+                <div class="col-sm-12">
+                    <center><img src="/beet.png" height="25px" width="25px" alt="">
+                        <a href="#top"><p class="opacity: .7; text-align: center;">Back to Top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></p></a></center>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="col-xs-3">
         <div class="panel panel-default">
           <div class="panel-body">
-              <p>Follow</p>
+              <p>about</p>
           </div>
         </div>
     </div>
