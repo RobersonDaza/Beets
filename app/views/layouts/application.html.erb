@@ -10,6 +10,31 @@
 
   <body>
     <%= render '/layouts/nav' %>
+
+    <% if params[:id] != nil %>
+        <% @url = '/user/' + params[:id] %>
+        <% if current_page?(@url)%>
+        <img src="/banner.jpg" class="profile-banner" alt="">
+        <div class="row">
+            <div class="col-sm-12" style="background-color: #fff;">
+                <div class="container">
+                    <div  class="col-sm-3">
+                        &nbsp;
+                    </div>
+                    <div  class="col-sm-6" style="margin-top: 5px;">
+                        <div class="col-sm-2" style="font-size: 120%; opacity: 0.7;">Beets <br>
+                            <h6 style="color: #9331B2; font-size: 100%; margin-top: 0px;">16</h6></div>
+                        <div class="col-sm-2" style="font-size: 120%; opacity: 0.7;">Followers <br>
+                            <h6 style="color: #9331B2; font-size: 100%; margin-top: 0px;">15</h6></div>
+                <% if user_signed_in? %>
+                    <div class="col-sm-8" style="text-align: right; margin-top: 5px;"><a href="/users/edit"><li type="button" class="btn btn-primary" style=" opacity: 0.8; font-weight: bold;">Edit profile</li></a></div>
+                <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% end %>
+    <% end%>
     <div class="container">
         <span class="notice"><%= notice %></span>
         <span class="alert"><%= alert %></span>

@@ -16,9 +16,13 @@ class PagesController < ApplicationController
 
       @beets = Beet.all.where("user_id = ?", User.find_by_username(params[:id]).id)
       @newBeet = Beet.new
+
+      @toFollow = User.all.last(5)
   end
 
   def explore
       @beets = Beet.all
+      @newBeet = Beet.new
+      @toFollow = User.all.last(5)
   end
 end
