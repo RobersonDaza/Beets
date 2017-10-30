@@ -14,10 +14,10 @@
                       </div>
                       <div class="col-sm-12">
                           <div class="col-sm-6" style="font-size: 40%, opacity: 0.7; font-weight: bold; color: grey; padding-left: 55px;">Beets <br>
-                              <h6 style="color: #9331B2; font-size: 150%; margin-top: 0px;">16</h6>
+                              <h6 style="color: #9331B2; font-size: 150%; margin-top: 0px;"><%= current_user.beets.count %></h6>
                           </div>
                           <div class="col-sm-6" style="font-size: 40%, opacity: 0.7; font-weight: bold; color: grey;">Followers <br>
-                              <h6 style="color: #9331B2; font-size: 150%; margin-top: 0px;">15</h6>
+                              <h6 style="color: #9331B2; font-size: 150%; margin-top: 0px;"><%= current_user.followers.count %></h6>
                           </div>
                       </div>
                   </div>
