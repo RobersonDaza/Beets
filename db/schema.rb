@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171030171214) do
+ActiveRecord::Schema.define(version: 20171031004358) do
 
   create_table "beets", force: :cascade do |t|
     t.text "content"
@@ -21,14 +21,13 @@ ActiveRecord::Schema.define(version: 20171030171214) do
     t.index ["user_id"], name: "index_beets_on_user_id"
   end
 
-  create_table "followers", force: :cascade do |t|
-    t.integer "follower_id"
-    t.integer "followed_id"
+  create_table "comments", force: :cascade do |t|
+    t.string "name"
+    t.text "comm"
+    t.integer "beet_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["followed_id"], name: "index_followers_on_followed_id"
-    t.index ["follower_id", "followed_id"], name: "index_followers_on_follower_id_and_followed_id", unique: true
-    t.index ["follower_id"], name: "index_followers_on_follower_id"
+    t.index ["beet_id"], name: "index_comments_on_beet_id"
   end
 
   create_table "relationships", force: :cascade do |t|

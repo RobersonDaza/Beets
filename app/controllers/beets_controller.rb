@@ -10,7 +10,7 @@ class BeetsController < ApplicationController
             if (@beet.save)
                 f.html {redirect_to "", notice: "Beet created!"}
             else
-                f.html {redirect_to "", notice: "Error: Beet Not Saved."}
+                f.html {redirect_to "", notice: "Error: minimun 200 charactres. Beet Not Saved."}
             end
         end
     end
