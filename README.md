@@ -5,11 +5,12 @@
         * El usuario Ingresa con un correo y contraseña
         * El ususario podra cancelar su cuenta, en la vista de editar perfil tendra la opción de cancelar, al darle click en cancelar le sale un alert para confirmar eliminar la cancelación, automaticamente se cierra la sesión y no podrá volver a ingresar con esa cuenta sino hasta que vuelva hacer un registro nuevo
 
-    Perfíl
+    Usuario
         * El usuario puede ver su perfíl
         * El usuario tendra la siguiente información en su perfíl (Imagen, Imagen de contraportada (no se puede cambiar), Nombre, dirección, ciudad y teléfono), podra editar y actualizar esa información.
         * El usuario puede crear un nuevo beet con un maximo de 200 caracteres
         * El usuario podra ver todos sus beets desde su perfíl
+        * El usuario que no este registrado puede ver los beets de todos los usuarios, en la pestaña de momento.
         * Todos los usuarios podran ver todos los beets de un usuario
         * El usuario puede tener un conteo de beet publicados
         * El usuario puede tener un conteo de usuarios que lo siguen
